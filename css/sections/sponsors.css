@@ -1,0 +1,23 @@
+/* Sponsors styles. Shared colors and typography live in ../base/. */
+
+#sponsors {
+  background-color: var(--section-color);
+}
+
+.sponsor-card {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.sponsor-card img {
+  max-height: 15vh;
+  object-fit: contain;
+  padding: 0px;
+  transition: 0.5s;
+}
+
+.sponsor-card img:hover {
+  transform: scale(1.5);
+  transition: 0.65s;
+}

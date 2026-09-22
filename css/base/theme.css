@@ -1,0 +1,12 @@
+/* Shared theme used throughout the site. */
+
+:root {
+  --background-color: #121212;
+  --text-color: #e0e0e0;
+  --section-color: #1e1e1e;
+  --section-color-alt: #242424;
+  --card-color: #2a2a2a;
+  --team-color: #6e0000;
+  --team-color-hover: #5a0000;
+  --team-color-lighter: #ff9c9c;
+}

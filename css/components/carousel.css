@@ -1,0 +1,12 @@
+/* Carousel styles. Shared colors and typography live in ../base/. */
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto;
+  padding: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 50% 50%;
+}

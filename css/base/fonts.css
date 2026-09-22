@@ -1,0 +1,17 @@
+/* Shared fonts used throughout the site. */
+
+@font-face {
+  font-family: "Bulo Medium";
+  src: url("/assets/fonts/bulo-medium.otf") format("opentype");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bulo Extra Black Italic";
+  src: url("/assets/fonts/bulo-extra-black-italic.otf") format("opentype");
+  font-display: swap;
+  font-weight: normal;
+  font-style: italic;
+}

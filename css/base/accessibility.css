@@ -1,0 +1,32 @@
+/* Keyboard navigation and motion preferences apply across all components. */
+:focus-visible {
+  outline: 3px solid var(--team-color-lighter);
+  outline-offset: 4px;
+}
+
+.skip-link {
+  position: fixed;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 1100;
+  padding: 0.5rem 1rem;
+  background: var(--background-color);
+  color: var(--text-color);
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+
+  .robot-card:hover, .sponsor-card img:hover, #galleryCarousel:hover {
+    transform: none;
+  }
+}

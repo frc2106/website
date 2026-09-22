@@ -1,0 +1,54 @@
+/* Shared typography used throughout the site. */
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Bulo Medium", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Bulo Extra Black Italic", "Bulo Medium", sans-serif;
+}
+
+p, ul, ol, li, a, span {
+  font-family: "Bulo Medium", sans-serif;
+  font-size: 1.35rem;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3.25rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  p, ul, ol, li, a, span {
+    font-size: 1.1rem;
+  }
+
+  h1{
+    font-size: 3rem;
+  }
+
+  h2{
+    font-size: 2.25rem;
+  }
+
+  h3{
+    font-size: 1.75rem;
+  }
+}
+
+a {
+  color: var(--team-color-lighter);
+}
+
+a:hover {
+  color: var(--text-color);
+}

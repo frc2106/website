@@ -1,0 +1,23 @@
+/* Navigation bar and mobile menu. */
+.navbar {
+  background-color: var(--section-color) !important;
+}
+
+.nav-link {
+  font-size: 1.25rem;
+}
+
+.navbar .container {
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  max-width: calc(100% - 4rem);
+  white-space: normal;
+  font-family: "Bulo Extra Black Italic", "Bulo Medium", sans-serif;
+  margin: 0;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}

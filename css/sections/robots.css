@@ -1,0 +1,39 @@
+/* Robots styles. Shared colors and typography live in ../base/. */
+
+#robots {
+  background-color: var(--section-color-alt) !important;
+}
+
+.robot-card {
+  background-color: var(--card-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.8);
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+}
+
+.robot-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.robot-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.robot-card .card-body {
+  padding: 1.5rem;
+}
+
+.robot-card .card-text {
+  color: var(--text-color);
+}
+
+/* Keep every image in the latest robot carousel consistent. */
+#guppyCarousel .carousel-item img {
+  object-fit: cover;
+  max-height: 450px;
+}

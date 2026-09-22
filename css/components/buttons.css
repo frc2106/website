@@ -1,0 +1,23 @@
+/* Bootstrap reads these variables for hover, keyboard focus, and active states. */
+.btn-primary {
+  --bs-btn-bg: var(--team-color);
+  --bs-btn-border-color: #fff;
+  --bs-btn-hover-bg: var(--team-color-hover);
+  --bs-btn-hover-border-color: #fff;
+  --bs-btn-active-bg: var(--team-color-hover);
+  --bs-btn-active-border-color: #fff;
+  --bs-btn-focus-shadow-rgb: 255, 156, 156;
+  border-radius: 0.7rem;
+}
+
+.btn-outline {
+  --bs-btn-color: #fff;
+  --bs-btn-border-color: #fff;
+  --bs-btn-hover-bg: #fff;
+  --bs-btn-hover-color: var(--team-color);
+  --bs-btn-hover-border-color: #fff;
+  --bs-btn-active-bg: #fff;
+  --bs-btn-active-color: var(--team-color);
+  --bs-btn-active-border-color: #fff;
+  border-radius: 0.78rem;
+}

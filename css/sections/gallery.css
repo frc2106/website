@@ -1,0 +1,31 @@
+/* Gallery styles. Shared colors and typography live in ../base/. */
+
+#gallery {
+  position: relative;
+  background-color: var(--section-color-alt) !important;
+  overflow: hidden;
+}
+
+#galleryCarousel {
+  height: 40vh;
+  transition: 0.35s;
+}
+
+#galleryCarousel:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  transition: 0.5s;
+}
+
+#galleryCarousel .carousel-inner,
+#galleryCarousel .carousel-item {
+  height: 100%;
+  border-radius: 15px;
+
+}
+
+#galleryCarousel .carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}

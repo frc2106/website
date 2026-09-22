@@ -1,0 +1,14 @@
+/* Dynamic-text styles. */
+
+.text-dynamic {
+  font-weight: bold;
+  color: var(--team-color-lighter);
+  transition: 0.5s;
+  margin-left: 0.5rem;
+}
+
+.text-dynamic::after {
+  content: ".";
+  vertical-align: middle;
+  transition: 0.5s;
+}

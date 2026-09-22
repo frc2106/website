@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team 2106 The Junkyard Dogs - Home</title>
-    <link rel="icon" type="image/x-icon" href="/public/favi.svg">
+    <link rel="icon" type="image/svg+xml" href="/assets/images/icons/favicon.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/new.css" rel="stylesheet">
+    <!-- The master stylesheet loads shared styles and each component. -->
+    <link href="/css/main.css" rel="stylesheet">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container d-flex align-items-center">
-            <h3 class="navbar-brand mb-0" href="#">The Junkyard Dogs</h3>
+            <a class="navbar-brand mb-0" href="#home">The Junkyard Dogs</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -28,12 +30,10 @@
             </div>
         </div>
     </nav>
-    
-    
 
     <header id="home" class="hero">
-        <video autoplay loop muted playsinline class="hero-video">
-            <source src="/public/bg-video-comp.mp4" type="video/mp4">
+        <video loop muted playsinline class="hero-video" aria-hidden="true">
+            <source src="/assets/videos/competition-background.mp4" type="video/mp4">
         </video>
         <div class="hero-content">
             <div class="container">
@@ -41,7 +41,7 @@
                     <div class="col-md-6">
                         <h1 class="display-1">Team 2106</h1>
                         <h2 class="display-4">The Junkyard Dogs</h2>
-                        <p class="force-font">18 years of <span id="dynamicText" class="text-dynamic">creating.</span></p>
+                        <p>18 years of <span id="dynamicText" class="text-dynamic">creating</span></p>
                         <div class="mt-4">
                             <a href="#about" class="btn btn-primary btn-lg me-2">Learn More</a>
                             <a href="#contact" class="btn btn-outline btn-lg">Join Us</a>
@@ -52,14 +52,14 @@
         </div>
     </header>
 
-    <main>
+    <main id="main-content" tabindex="-1">
         <section id="about" class="py-5">
             <div class="container">
                 <h2 class="text-center mb-4">About Us</h2>
                 <div class="row">
                     <div class="col-md-6">
                         <p>We are a passionate and dedicated robotics team that competes in the FIRST Robotics Competition. We are innovators, problem-solvers, and future leaders united by our passion for STEM. Competing in the FIRST Robotics Competition, we push the boundaries of what's possible, turning ideas into reality and challenges into triumphs.</p>
-                        <p>Our mission goes beyond building robots. We're building futures. Through the exciting world of STEM, engineering, and communications, we inspire and educate, fostering the next generation of tech visionaries and industry pioneers using.</p>
+                        <p>Our mission goes beyond building robots. We're building futures. Through the exciting world of STEM, engineering, and communications, we inspire and educate, fostering the next generation of tech visionaries and industry pioneers.</p>
                     </div>
                     <div class="col-md-6">
                         <p>At the heart of our team are the strong bonds formed between students, mentors, and education. These relationships nurture growth, spark creativity, and lay the foundation for powerful futures in STEM fields and beyond.</p>
@@ -78,21 +78,21 @@
                             <div class="row g-0">
                                 <div class="col-md-6">
                                     <div class="p-3">
-                                        <div id="guppyCarousel" class="carousel slide" data-bs-ride="carousel">
+                                        <div id="guppyCarousel" class="carousel slide">
                                             <div class="carousel-inner rounded">
                                                 <div class="carousel-item active">
-                                                    <img src="images/guppy/gettingalage.png" class="d-block w-100" alt="Guppy 2025 Robot" style="object-fit: cover; max-height: 450px;">
+                                                    <img loading="lazy" src="/assets/images/robots/2025-guppy/collecting-algae.png" class="d-block w-100" alt="Guppy 2025 Robot">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="images/guppy/lineup.png" class="d-block w-100" alt="Guppy Robot Side View" style="object-fit: cover; max-height: 450px;">
+                                                    <img loading="lazy" src="/assets/images/robots/2025-guppy/lineup.png" class="d-block w-100" alt="Guppy Robot Side View">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="images/guppy/lookinatyou.png" class="d-block w-100" alt="Guppy Robot Action Shot" style="object-fit: cover; max-height: 450px;">
+                                                    <img loading="lazy" src="/assets/images/robots/2025-guppy/front-view.png" class="d-block w-100" alt="Guppy Robot Action Shot">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="images/guppy/stuck.png" class="d-block w-100" alt="Guppy Robot Action Shot" style="object-fit: cover; max-height: 450px;">
+                                                    <img loading="lazy" src="/assets/images/robots/2025-guppy/stuck.png" class="d-block w-100" alt="Guppy Robot Action Shot">
                                                 </div>
-                                                
+
                                             </div>
                                             <button class="carousel-control-prev" type="button" data-bs-target="#guppyCarousel" data-bs-slide="prev">
                                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -108,7 +108,7 @@
                                                 <button type="button" data-bs-target="#guppyCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                                                 <button type="button" data-bs-target="#guppyCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
                                             </div>
-                                            
+
                                         </div>
                                     </div>
                                 </div>
@@ -133,31 +133,31 @@
                 </div>
 
                 <h2 class="text-center my-4">Previous Robots</h2>
-        
+
                 <div class="row">
                     <div class="col-md-4 mb-4">
                         <div class="card robot-card">
-                            <img src="/images/robots/MaestroPop.png" class="card-img-top" alt="2024 Robot">
+                            <img loading="lazy" src="/assets/images/robots/2024-maestro/robot.png" class="card-img-top" alt="2024 Robot">
                             <div class="card-body">
                                 <h3 class="card-title">2024 - Maestro</h3>
-                                <p class="card-text">Built for FIRST 2024 CRESCENDO, Maestro represents our most advanced robot to date. It features improved swerve modules, enhanced wiring, and a vision system for autonomous driving. Maestro excels at ring manipulation, precise shooting, and chain climbing during endgame.</p>
+                                <p class="card-text">Built for FIRST 2024 CRESCENDO, Maestro was our 2024 competition robot. It features improved swerve modules, enhanced wiring, and a vision system for autonomous driving. Maestro excels at ring manipulation, precise shooting, and chain climbing during endgame.</p>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="col-md-4 mb-4">
                         <div class="card robot-card">
-                            <img src="/images/robots/ContPop.jpg" class="card-img-top" alt="2023 Robot">
+                            <img loading="lazy" src="/assets/images/robots/2023-continuity/robot.jpg" class="card-img-top" alt="2023 Robot">
                             <div class="card-body">
                                 <h3 class="card-title">2023 - Continuity</h3>
                                 <p class="card-text">Designed for FIRST 2023 Charged Up, Continuity boasts a double-stage elevator reaching to 6ft! It expertly handles cubes and cones, placing them on poles and shelves. This robot led our team to our first-ever FIRST World Championship in Houston, Texas.</p>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="col-md-4 mb-4">
                         <div class="card robot-card">
-                            <img src="/images/robots/CompPop2.jpg" class="card-img-top" alt="2022 Robot">
+                            <img loading="lazy" src="/assets/images/robots/2022-tcm/robot.jpg" class="card-img-top" alt="2022 Robot">
                             <div class="card-body">
                                 <h3 class="card-title">2022 - TCM</h3>
                                 <p class="card-text">The Complex Machine, built for FIRST 2022 Rapid React, showcases intricate design. It features a unique climbing system utilizing the robot's center of gravity to ascend 7ft monkey bars, complemented by a powerful shooting system for high-goal scoring.</p>
@@ -174,35 +174,34 @@
                 <p class="lead">Interested in robotics? Want to be part of our team?</p>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                     <a href="mailto:sdeloach@glnd.k12.va.us" class="btn btn-primary btn-lg w-auto">Email Us</a>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYKykLTCv25Z_ih4oKt6s-xyS7TOcEGit4ovYwQbc48zz8vQ/viewform?usp=sf_link" class="btn btn-primary btn-lg ">Student Sign-up</a>
-                    <a href="/public/subteamPoster.png" class="btn btn-outline btn-lg w-auto">Student Flyer</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYKykLTCv25Z_ih4oKt6s-xyS7TOcEGit4ovYwQbc48zz8vQ/viewform?usp=sf_link" class="btn btn-primary btn-lg">Student Sign-up</a>
+                    <a href="/assets/images/flyers/subteam-poster.png" class="btn btn-outline btn-lg w-auto">Student Flyer</a>
                 </div>
             </div>
         </section>
 
-
         <section id="gallery" class="py-5">
             <div class="container">
                 <h2 class="text-center mb-4">Gallery</h2>
-                <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div id="galleryCarousel" class="carousel slide">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="/images/Balanced (1).jpg" class="d-block w-100" alt="Balanced robot">
+                            <img loading="lazy" src="/assets/images/gallery/balanced-robot.jpg" class="d-block w-100" alt="Balanced robot">
                         </div>
                         <div class="carousel-item">
-                            <img src="/images/finals.jpg" class="d-block w-100" alt="Finals competition">
+                            <img loading="lazy" src="/assets/images/gallery/competition-finals.jpg" class="d-block w-100" alt="Finals competition">
                         </div>
                         <div class="carousel-item">
-                            <img src="/images/robotsur (1).jpg" class="d-block w-100" alt="Robot surrounded by team">
+                            <img loading="lazy" src="/assets/images/gallery/robot-with-team.jpg" class="d-block w-100" alt="Robot surrounded by team">
                         </div>
                         <div class="carousel-item">
-                            <img src="/images/IMG_3005.jpg" class="d-block w-100" alt="Team photo">
+                            <img loading="lazy" src="/assets/images/gallery/team-photo.jpg" class="d-block w-100" alt="Team photo">
                         </div>
                         <div class="carousel-item">
-                            <img src="/images/preschool.jpg" class="d-block w-100" alt="Preschool outreach">
+                            <img loading="lazy" src="/assets/images/gallery/preschool-outreach.jpg" class="d-block w-100" alt="Preschool outreach">
                         </div>
                         <div class="carousel-item">
-                            <img src="/images/parade.jpg" class="d-block w-100" alt="Parade participation">
+                            <img loading="lazy" src="/assets/images/gallery/parade.jpg" class="d-block w-100" alt="Parade participation">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
@@ -223,98 +222,73 @@
                 <div class="row">
                     <div class="col-md-4 col-6 mb-4">
                         <div class="card sponsor-card">
-                            <img src="images/sponsors/luckstone.png" class="card-img-top" alt="Sponsor 1">
+                            <img loading="lazy" src="/assets/images/sponsors/luck-stone.png" class="card-img-top" alt="Luck Stone">
                         </div>
                     </div>
                     <div class="col-md-4 col-6 mb-4">
                         <div class="card sponsor-card">
-                            <img src="images/sponsors/GHF_Logo_DarkBackground.png" class="card-img-top" alt="Sponsor 2">
+                            <img loading="lazy" src="/assets/images/sponsors/ghf-dark-background.png" class="card-img-top" alt="GHF">
                         </div>
                     </div>
                     <div class="col-md-4 col-6 mb-4">
                         <div class="card sponsor-card">
-                            <img src="images/sponsors/groundforceit.png" class="card-img-top" alt="Sponsor 3">
+                            <img loading="lazy" src="/assets/images/sponsors/groundforce-it.png" class="card-img-top" alt="GroundForce IT">
                         </div>
                     </div>
                     <div class="col-md-4 col-6 mb-4">
                         <div class="card sponsor-card">
-                            <img src="images/sponsors/gordon.png" class="card-img-top" alt="Sponsor 4">
+                            <img loading="lazy" src="/assets/images/sponsors/gordon.png" class="card-img-top" alt="Gordon">
                         </div>
                     </div>
                     <div class="col-md-4 col-6 mb-4">
                         <div class="card sponsor-card">
-                            <img src="images/sponsors/goochland.png" class="card-img-top" alt="Sponsor 5">
+                            <img loading="lazy" src="/assets/images/sponsors/goochland.png" class="card-img-top" alt="Goochland">
                         </div>
                     </div>
                     <div class="col-md-4 col-6 mb-4">
                         <div class="card sponsor-card">
-                            <img src="images/sponsors/liesfeld.png" class="card-img-top" alt="Sponsor 6">
+                            <img loading="lazy" src="/assets/images/sponsors/liesfeld.png" class="card-img-top" alt="Liesfeld">
                         </div>
                     </div>
                     <div class="col-md-4 col-6 mb-4">
                         <div class="card sponsor-card">
-                            <img src="images/sponsors/blakemore.png" class="card-img-top" alt="Sponsor 7">
+                            <img loading="lazy" src="/assets/images/sponsors/blakemore.png" class="card-img-top" alt="Blakemore">
                         </div>
                     </div>
                     <div class="col-md-4 col-6 mb-4">
                         <div class="card sponsor-card">
-                            <img src="images/sponsors/rotary.png" class="card-img-top" alt="Sponsor 8">
+                            <img loading="lazy" src="/assets/images/sponsors/rotary.png" class="card-img-top" alt="Rotary">
                         </div>
                     </div>
                     <div class="col-md-4 col-6 mb-4">
                         <div class="card sponsor-card">
-                            <img src="images/sponsors/KosmoLogo.png" class="card-img-top" alt="Sponsor 9">
+                            <img loading="lazy" src="/assets/images/sponsors/kosmo-logo.png" class="card-img-top" alt="Kosmo">
                         </div>
                     </div>
                     <div class="col-md-4 col-6 mb-4">
                         <div class="card sponsor-card">
-                            <img src="images/sponsors/thornton.png" class="card-img-top" alt="Sponsor 10">
+                            <img loading="lazy" src="/assets/images/sponsors/thornton.png" class="card-img-top" alt="Thornton">
                         </div>
                     </div>
                     <div class="col-md-4 col-6 mb-4">
                         <div class="card sponsor-card">
-                            <img src="images/sponsors/tkl.png" class="card-img-top" alt="Sponsor 11">
+                            <img loading="lazy" src="/assets/images/sponsors/tkl.png" class="card-img-top" alt="TKL">
                         </div>
                     </div>
-                    <!-- <div class="col-md-4 col-6 mb-4">
-                        <div class="card sponsor-card">
-                            <img src="images/sponsors/blueridgelogo.png" class="card-img-top" alt="Sponsor 12">
-                        </div>
-                    </div> -->
-    
+
                     <!-- Add more sponsor cards as needed -->
                 </div>
             </div>
         </section>
     </main>
-    
+
     <footer id="footer" class="text-white text-center py-3">
         <p>&copy; 2025 Team 2106 The Junkyard Dogs. All rights reserved.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/js/dynamicText.js"></script>
-    
-    <script>
-        function handleHover(event) {
-          const img = event.target;
-          const rect = img.getBoundingClientRect();
-          const x = event.clientX - rect.left;
-          const y = event.clientY - rect.top;
-          const centerX = rect.width / 2;
-          const centerY = rect.height / 2;
-          const rotateX = ((y - centerY) / centerY) * -10;
-          const rotateY = ((x - centerX) / centerX) * 10;
-      
-          img.style.setProperty('--rotateX', `${rotateX}deg`);
-          img.style.setProperty('--rotateY', `${rotateY}deg`);
-        }
-      
-        function resetHover(event) {
-          const img = event.target;
-          img.style.setProperty('--rotateX', `0deg`);
-          img.style.setProperty('--rotateY', `0deg`);
-        }
-    </script>
+    <script src="/js/dynamic-text.js"></script>
+    <script src="/js/hero-video.js"></script>
+
 </body>
 </html>
